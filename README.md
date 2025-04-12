@@ -1,6 +1,6 @@
 # News RAG Summarizer & Q&A
 
-A Python application that scrapes articles from a news website (currently configured for The Straits Times), uses a local Large Language Model (LLM) via Ollama and Retrieval-Augmented Generation (RAG) to create a concise summary, and allows you to ask questions about the scraped content.
+A Python application that scrapes articles from The Straits Times, uses a local Large Language Model (LLM) via Ollama and Retrieval-Augmented Generation (RAG) to create a concise summary, and allows you to ask questions about the scraped content.
 
 ## Features
 
@@ -54,7 +54,7 @@ Before you begin, ensure you have the following installed:
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/YOUR_USERNAME/news-rag-summarizer.git
+    git clone https://github.com/solilei/straitstimes-summarizer-rag.git
     cd news-rag-summarizer
     ```
 
@@ -107,9 +107,5 @@ Key parameters can be adjusted directly in the scripts:
 *   **Ollama Performance:** The speed of embedding generation, summarization, and Q&A depends heavily on your local hardware (CPU/GPU, RAM) and the specific Ollama models used. Larger models require more resources.
 *   **In-Memory Vector Store:** The Chroma vector database is created in memory each time the script runs. It is not persisted between runs.
 *   **Information Accuracy:** The LLM's summary and answers are based *solely* on the text scraped from the articles during that run. The quality of the output depends on the source text and the capabilities of the chosen LLM. It may not always be perfectly accurate or complete. Do not rely on this for critical decisions.
-
-## License
-
-This project is licensed under the MIT License - see the `LICENSE` file for details. (You should create a `LICENSE` file, typically containing the standard MIT License text).
 
 ---
