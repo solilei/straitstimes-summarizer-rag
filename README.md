@@ -55,22 +55,30 @@ Before you begin, ensure you have the following installed:
 1.  **Clone the repository:**
     ```bash
     git clone https://github.com/solilei/straitstimes-summarizer-rag.git
-    cd news-rag-summarizer
+    cd News_scraper
     ```
+    *(If you cloned it with a different name, `cd` into that directory instead)*
 
-2.  **Create and activate a virtual environment (Recommended):**
+2.  **Create a virtual environment (Recommended, if you haven't already):**
+    *   **Inside the `News_scraper` directory:**
+        ```bash
+        python -m venv .venv
+        ```
+        *(This creates the `.venv` folder)*
+
+3.  **Activate the virtual environment:**
     *   **Linux/macOS:**
         ```bash
-        python3 -m venv venv
-        source venv/bin/activate
+        source .venv/bin/activate
         ```
-    *   **Windows:**
+    *   **Windows (Command Prompt/Batch):**
         ```bash
-        python -m venv venv
-        .\venv\Scripts\activate
+        .\.venv\Scripts\activate.bat
         ```
+        *(Note: If you are using PowerShell, the command might be `.\.venv\Scripts\Activate.ps1`)*
 
-3.  **Install dependencies:**
+4.  **Install dependencies:**
+    *(Ensure your virtual environment is active before running this)*
     ```bash
     pip install -r requirements.txt
     ```
